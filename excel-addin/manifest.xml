@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
+  <Id>68a23cde-0a47-4a2e-a3a2-4dcb8f7ce47c</Id>
+  <Version>0.1.0.0</Version>
+  <ProviderName>Arthur / artloock</ProviderName>
+  <DefaultLocale>pt-BR</DefaultLocale>
+  <DisplayName DefaultValue="DataAlign" />
+  <Description DefaultValue="Limpeza, padronização e comparação visual de dados no Excel." />
+  <IconUrl DefaultValue="https://localhost:3000/icon.svg" />
+  <SupportUrl DefaultValue="https://github.com/artloock/Pthon-Graphic-Data-Analisis" />
+  <AppDomains><AppDomain>https://localhost:3000</AppDomain></AppDomains>
+  <Hosts><Host Name="Workbook" /></Hosts>
+  <DefaultSettings><SourceLocation DefaultValue="https://localhost:3000/taskpane.html" /></DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

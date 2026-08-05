@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataAlign</title>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <div class="brand">DA</div>
+        <div><h1>DataAlign</h1><p>Dados limpos. Gráficos confiáveis.</p></div>
+      </header>
+
+      <section class="hero">
+        <span class="eyebrow">PLANILHA ATIVA</span>
+        <strong id="sheet-name">Aguardando o Excel…</strong>
+        <p id="dataset-meta">Abra uma pasta de trabalho e analise a tabela atual.</p>
+        <button id="analyze" class="primary">Analisar dados</button>
+      </section>
+
+      <section id="results" class="panel hidden">
+        <div class="section-title"><h2>Revisão</h2><span id="issue-count" class="pill">0 ajustes</span></div>
+        <p class="muted">Nada é alterado sem sua aprovação.</p>
+        <div id="suggestions" class="suggestions"></div>
+        <div class="actions">
+          <button id="apply" class="primary">Aplicar selecionados</button>
+          <button id="undo" class="secondary" disabled>Desfazer</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-title"><h2>Gráfico</h2></div>
+        <label>Categoria<select id="category"></select></label>
+        <label>Valor<select id="value"></select></label>
+        <button id="chart" class="secondary" disabled>Gerar gráfico</button>
+      </section>
+
+      <section class="panel">
+        <div class="section-title"><h2>Comparação histórica</h2></div>
+        <p class="muted">Importe um CSV ou XLSX antigo e compare com os dados atuais.</p>
+        <label class="file-input">Selecionar arquivo<input id="previous-file" type="file" accept=".csv,.xlsx,.xls" /></label>
+        <span id="file-name" class="filename">Nenhum arquivo selecionado</span>
+        <button id="compare" class="secondary" disabled>Comparar períodos</button>
+      </section>
+
+      <footer><span id="status">Pronto para começar.</span><span class="rules">Motor local de regras</span></footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
